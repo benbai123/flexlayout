@@ -22,7 +22,7 @@ public class Flexlayout extends XulElement{
 	//private String _border = "none";
 	private String _orient = ""; //horizontal, vertical
 	private String _align = ""; //stretch, start, end, center
-	private String _direction = ""; //normal, reverse
+	private String _direction = "inherit"; //normal, reverse
 	private String _pack = ""; //start, end, center, justify
 	
 	public void setOrient(String orient){
@@ -53,7 +53,7 @@ public class Flexlayout extends XulElement{
 
 	public void setDirection(String direction){
 		if(direction == null)
-			direction = "";
+			direction = "inherit";
 		if(!Objects.equals(_direction, direction)) {
 			_direction = direction;
 			smartUpdate("direction", _direction);
@@ -78,7 +78,7 @@ public class Flexlayout extends XulElement{
 	}
 
 	public void beforeChildAdded(Component child, Component refChild) {
-		if (!(child instanceof Flexchildren))
+		if (!((child instanceof Flexchildren) || (child instanceof Flexlayout)))
 			throw new UiException("Unsupported child for Flexlayout: "
 					+ child);
 		super.beforeChildAdded(child, refChild);
