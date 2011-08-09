@@ -1,0 +1,5 @@
+<package name="flexlayout" language="xul/html" cacheable="false" depends="zul.wgt">
+	<script src="ext/flexie.js"/>
+	<widget name="Flexlayout"/>
+	<widget name="Flexchildren"/>
+</package>
