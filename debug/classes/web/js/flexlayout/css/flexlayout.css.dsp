@@ -1,20 +1,29 @@
 <%@ taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" %>
-.z-anchorlayout,
-.z-anchorlayout-inner,
-.z-anchorchildren,
-.z-anchorchildren-body,
-.z-anchorchildren-cnt{
-	overflow: hidden;
+
+.z-flexlayout-inner{
+	display:-moz-box;
+	display:-webkit-box;
+	display:box;
+}
+.z-flexchildren {
+	display: inline-block;
 }
 
-.z-anchorchildren {
-    float: left; padding: 0; margin: 0;
+<%-- --------- --%>
+<%-- direction --%>
+<%-- --------- --%>
+.z-flexlayout-dir-normal {
+	-moz-box-direction: normal;
+	-webkit-box-direction: normal;
+	box-direction: normal;
 }
-
-<c:if test="${c:isExplorer()}">
-.z-anchorlayout,
-.z-anchorchildren,
-.z-anchorchildren-body {
-    zoom: 1;
+.z-flexlayout-dir-reverse {
+	-moz-box-direction: reverse;
+	-webkit-box-direction: reverse;
+	box-direction: reverse;
 }
-</c:if>
+.z-flexlayout-dir-inherit {
+	-moz-box-direction: inherit;
+	-webkit-box-direction: inherit;
+	box-direction: inherit;
+}
