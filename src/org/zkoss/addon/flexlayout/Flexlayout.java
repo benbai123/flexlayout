@@ -20,14 +20,14 @@ public class Flexlayout extends XulElement{
 	private static final long serialVersionUID = -1342193882797042898L;
 
 	//private String _border = "none";
-	private String _orient = ""; //horizontal, vertical
-	private String _align = ""; //stretch, start, end, center
-	private String _direction = "inherit"; //normal, reverse
-	private String _pack = ""; //start, end, center, justify
+	private String _orient = "horizontal"; //horizontal, vertical
+	private String _align = "center"; //stretch, start, end, center
+	private String _direction = "normal"; //normal, reverse
+	private String _pack = "center"; //start, end, center, justify
 	
 	public void setOrient(String orient){
 		if(orient == null)
-			orient = "";
+			orient = "horizontal";
 		if(!Objects.equals(_orient, orient)) {
 			_orient = orient;
 			smartUpdate("orient", _orient);
@@ -40,7 +40,7 @@ public class Flexlayout extends XulElement{
 
 	public void setAlign(String align){
 		if(align == null)
-			align = "";
+			align = "center";
 		if(!Objects.equals(_align, align)) {
 			_align = align;
 			smartUpdate("align", _align);
@@ -52,8 +52,11 @@ public class Flexlayout extends XulElement{
 	}
 
 	public void setDirection(String direction){
-		if(direction == null)
-			direction = "inherit";
+		if (direction == null)
+			direction = "normal";
+		if ("inherit".equals(direction)) {
+			// TODO get parent direction
+		}
 		if(!Objects.equals(_direction, direction)) {
 			_direction = direction;
 			smartUpdate("direction", _direction);
@@ -66,7 +69,7 @@ public class Flexlayout extends XulElement{
 
 	public void setPack(String pack){
 		if(pack == null)
-			pack = "";
+			pack = "center";
 		if(!Objects.equals(_pack, pack)) {
 			_pack = pack;
 			smartUpdate("pack", _pack);
@@ -78,9 +81,7 @@ public class Flexlayout extends XulElement{
 	}
 
 	public void beforeChildAdded(Component child, Component refChild) {
-		if (!((child instanceof Flexchildren) || (child instanceof Flexlayout)))
-			throw new UiException("Unsupported child for Flexlayout: "
-					+ child);
+
 		super.beforeChildAdded(child, refChild);
 	}
 	
