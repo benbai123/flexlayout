@@ -2,27 +2,28 @@ package org.zkoss.addon.flexlayout;
 
 import org.zkoss.lang.Objects;
 import org.zkoss.zk.ui.Component;
-import org.zkoss.zk.ui.UiException;
 import org.zkoss.zul.impl.XulElement;
 
 /**
- * An anchorlayout lays out a container which can resize 
- * it's children base on its width and height<br>
- * <p>Available in ZK addon.
+ * An flexlayout lays out a container which support 
+ * the CSS3 flex-box model.<br>
  * 
- * <p>Default {@link #getZclass}: z-anchorlayout.
+ * <p>Default {@link #getZclass}: z-flexlayout.
  * 
- * @author peterkuo
- * @since 5.0.7
+ * @author benbai
+ * @since 5.5.0
  */
 public class Flexlayout extends XulElement{
 
 	private static final long serialVersionUID = -1342193882797042898L;
 
-	//private String _border = "none";
+	/** The box-orient of this Flexlayout. */
 	private String _orient = "horizontal"; //horizontal, vertical
+	/** The box-align of this Flexlayout. */
 	private String _align = "center"; //stretch, start, end, center
+	/** The box-direction of this Flexlayout. */
 	private String _direction = "normal"; //normal, reverse
+	/** The box-pack of this Flexlayout. */
 	private String _pack = "center"; //start, end, center, justify
 	
 	public void setOrient(String orient){

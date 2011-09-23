@@ -2,24 +2,24 @@ package org.zkoss.addon.flexlayout;
 
 import java.io.IOException;
 
-import org.zkoss.lang.Objects;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.UiException;
 import org.zkoss.zk.ui.sys.ContentRenderer;
 import org.zkoss.zul.impl.XulElement;
 
 /**
- * The children of Anchorlayout. <br> 
+ * The children of Flexlayout. <br> 
  * Can accept any ZK component as child.
- * <p>Available in ZK addon
  * 
- * <p>Default {@link #getZclass}: z-anchorchildren.
- * @author peterkuo
- * @since 5.0.7
+ * <p>Default {@link #getZclass}: z-flexchildren.
+ * @author benbai
+ * @since 5.5.0
  */
 public class Flexchildren extends XulElement{
 	
+	/** The box-flex value of this Flexchildren. */
 	private int _flex = 0;
+	/** The ordinal-group number of this Flexchildren. */
 	private int _ordinal = 1;
 
 	/**
@@ -80,10 +80,7 @@ public class Flexchildren extends XulElement{
 
 	public Flexchildren(){}
 	
-	public Flexchildren(String anchor){
-		super();
-	}
-	
+	// super
 	public String getZclass() {
 		return _zclass == null ? "z-flexchildren" : _zclass;
 	}
@@ -93,7 +90,7 @@ public class Flexchildren extends XulElement{
 			throw new UiException("Wrong parent: " + parent);
 		super.beforeParentChanged(parent);
 	}
-	
+
 	protected void renderProperties(ContentRenderer renderer) throws IOException{
 		super.renderProperties(renderer);
 		

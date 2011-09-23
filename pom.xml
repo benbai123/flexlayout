@@ -30,16 +30,11 @@
 			<artifactId>zul</artifactId>
 			<version>${zk.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.zkoss.zk</groupId>
-			<artifactId>zul</artifactId>
-			<version>${zk.version}</version>
-		</dependency>
 	</dependencies>
 	<build>
-		<directory>${project.basedir}/debug</directory>
+		<directory>${project.basedir}/target/lib</directory>
 		<outputDirectory>${project.basedir}/debug/classes</outputDirectory>
-		<finalName>${project.artifactId}-${zk.version}</finalName>
+		<finalName>${project.artifactId}</finalName>
 		<testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
 		<sourceDirectory>${project.basedir}/src/</sourceDirectory>
 		<resources>
