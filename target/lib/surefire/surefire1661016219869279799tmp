@@ -1,0 +1,33 @@
+#surefire
+#Tue Sep 27 17:48:03 CST 2011
+testClassesDirectory=C\:\\Users\\ben\\flexlayout\\target\\lib\\test-classes
+classPathUrl.4=C\:\\Users\\ben\\.m2\\repository\\org\\zkoss\\zkforge\\el\\zcommons-el\\1.1.0\\zcommons-el-1.1.0.jar
+classPathUrl.3=C\:\\Users\\ben\\.m2\\repository\\commons-fileupload\\commons-fileupload\\1.2.1\\commons-fileupload-1.2.1.jar
+classPathUrl.2=C\:\\Users\\ben\\.m2\\repository\\org\\zkoss\\common\\zcommon\\5.0.8\\zcommon-5.0.8.jar
+useManifestOnlyJar=true
+classPathUrl.1=C\:\\Users\\ben\\flexlayout\\debug\\classes
+reportsDirectory=C\:\\Users\\ben\\flexlayout\\target\\lib\\surefire-reports
+classPathUrl.0=C\:\\Users\\ben\\flexlayout\\target\\lib\\test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=C\:\\Users\\ben\\flexlayout\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\ben\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.7.1\\surefire-api-2.7.1.jar
+surefireClassPathUrl.0=C\:\\Users\\ben\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit3\\2.7.1\\surefire-junit3-2.7.1.jar
+report.2=org.apache.maven.surefire.report.XMLReporter
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=C\:\\Users\\ben\\flexlayout\\target\\lib\\test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+includes2=**/*TestCase.java
+enableAssertions=true
+includes1=**/*Test.java
+failIfNoTests=false
+includes0=**/Test*.java
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+classPathUrl.8=C\:\\Users\\ben\\.m2\\repository\\org\\zkoss\\zk\\zk\\5.0.8\\zk-5.0.8.jar
+classPathUrl.7=C\:\\Users\\ben\\.m2\\repository\\org\\zkoss\\zk\\zul\\5.0.8\\zul-5.0.8.jar
+childDelegation=false
+classPathUrl.6=C\:\\Users\\ben\\.m2\\repository\\org\\zkoss\\common\\zweb\\5.0.8\\zweb-5.0.8.jar
+classPathUrl.5=C\:\\Users\\ben\\.m2\\repository\\org\\beanshell\\bsh\\2.0b4\\bsh-2.0b4.jar
