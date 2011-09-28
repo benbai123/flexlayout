@@ -1,5 +1,5 @@
 Flexlayout is a layout component based on CSS3 Flexible Box Layout Module for the purpose of layout components.
-It support cross-browser by wrapping flexie ¡V the Cross-browser support for the CSS3 Flexible Box Model library created by doctyper on github.
+It support cross-browser by wrapping flexieâ€“ the Cross-browser support for the CSS3 Flexible Box Model library created by doctyper on github.
 
 Since CSS3 Flexible Box Layout is a specification under development by the W3C CSS working group and seems not done yet,
 there is no guarantee for identical appearance and still has some browser issue.
