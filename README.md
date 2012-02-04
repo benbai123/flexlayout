@@ -4,10 +4,10 @@ It support cross-browser by wrapping flexie– the Cross-browser support for the
 Since CSS3 Flexible Box Layout is a specification under development by the W3C CSS working group and seems not done yet,
 there is no guarantee for identical appearance and still has some browser issue.
 
-# Demo
+## Demo
 http://content.screencast.com/users/benbai123/folders/Default/media/e88aca91-16b5-4544-9f22-05af4c025256/flexlayout_demo.swf
 
-# Example
+## Example
 
 <flexlayout width="350px" height="300px">
 	<flexchildren>
@@ -24,9 +24,9 @@ http://content.screencast.com/users/benbai123/folders/Default/media/e88aca91-16b
 	</flexchildren>
 </flexlayout>
 
-# Properties
+## Properties
 
-## flexlayout
+### flexlayout
 	*	**orient**
 		(optional) The box-orient of this Flexlayout.
 		Possible values: `horizontal`, `vertical`
@@ -44,7 +44,7 @@ http://content.screencast.com/users/benbai123/folders/Default/media/e88aca91-16b
 		Possible values: `start`, `end`, `center`, `justify`
 		Default: `center`
 
-## flexchildren
+### flexchildren
 	*	**flex**
 		(optional) The box-flex value of this Flexchildren.
 		Possible values: int >= 0
